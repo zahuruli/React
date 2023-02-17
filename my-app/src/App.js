@@ -1,13 +1,14 @@
 
-import './index.css'
+import './app.css'
 
 const todo="Todo title";
 const date1='02/17/2023'
 const date=new Date();
-const now=date.getFullYear()
+const now="zahurul Family"
 const fullDate=date.getDate()
 const name1="zahurul ";
 const name2=" islam"
+const todoDesc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, a?"
 
 const Pstyle={
   backgroundColor:"purple",
@@ -18,13 +19,14 @@ const Pstyle={
 function App() {
   return (
     <div>
-      <h1 style={{color:"red",backgroundColor:"black"}}>Hello worlds</h1>
-      <p style={Pstyle}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, a?</p>
-      <h3 style={{fontSize:"3rem"}}>{todo}</h3>
-      <p>{date1}</p>
-      <p>{fullDate}</p>
-      <p>{now}</p>
-      <p className="headingStyle">{name1 + name2}</p>
+      <h1 className={"headingStyle"}>Hello worlds</h1>
+    
+    <div className="card" >
+    <p className="cardTitle" >{now}</p>
+     <p className="cardDesc">{todoDesc}</p>
+    <p className="cardFooter" >{name1 + name2}</p>
+
+  </div>
     </div>
   );
 }
